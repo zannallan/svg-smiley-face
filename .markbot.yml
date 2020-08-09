@@ -1,5 +1,5 @@
-repo: 'svg-smiley-face'
-canvasCourse: 'web-dev-3'
+repo: "svg-smiley-face"
+canvasCourse: "web-design-3"
 
 inherit:
   - naming-restrict-live
@@ -8,36 +8,36 @@ inherit:
   - css
 
 html:
-  - path: 'index.html'
+  - path: "index.html"
     outline: false
     has:
-      - 'svg.smiley'
-      - 'circle.face'
-      - 'circle.left-eye'
-      - 'circle.right-eye'
-      - 'path.mouth'
-      - 'rect.left-eyebrow'
-      - 'rect.right-eyebrow'
+      - "svg.smiley"
+      - "circle.face"
+      - "circle.left-eye"
+      - "circle.right-eye"
+      - "path.mouth"
+      - "rect.left-eyebrow"
+      - "rect.right-eyebrow"
 
 css:
-  - path: 'css/main.css'
+  - path: "css/main.css"
     has:
-      - ['.face', 'fill', 'gold']
-      - ['.mouth', 'fill', 'none']
-      - ['.mouth', 'stroke', '#000']
-      - ['.left-eyebrow', 'transform', 'rotate(80deg)']
-      - ['.left-eyebrow', 'transform-origin', '100px 82px']
-      - ['.right-eyebrow', 'transform', 'rotate(100deg)']
-      - ['.right-eyebrow', 'transition', 'all .5s linear']
-      - ['.smiley:hover .left-eyebrow', 'transform', 'rotate(100deg)']
-      - ['.smiley:hover .right-eyebrow', 'transform', 'rotate(80deg)']
+      - [".face", "fill", "gold"]
+      - [".mouth", "fill", "none"]
+      - [".mouth", "stroke", "#000"]
+      - [".left-eyebrow", "transform", "rotate(80deg)"]
+      - [".left-eyebrow", "transform-origin", "100px 82px"]
+      - [".right-eyebrow", "transform", "rotate(100deg)"]
+      - [".right-eyebrow", "transition", "all .5s linear"]
+      - [".smiley:hover .left-eyebrow", "transform", "rotate(100deg)"]
+      - [".smiley:hover .right-eyebrow", "transform", "rotate(80deg)"]
 
 screenshots:
-  - path: 'index.html'
-    label: 'Before'
+  - path: "index.html"
+    label: "Before"
     sizes: [320]
-  - path: 'index.html'
-    label: 'After'
+  - path: "index.html"
+    label: "After"
     sizes: [320]
     before: |
       let eyebrow = $('.left-eyebrow');
@@ -46,7 +46,7 @@ screenshots:
       hover(eyebrow);
 
 functionality:
-  - path: 'index.html'
+  - path: "index.html"
     tests:
       - |
         let eyebrow = $('.left-eyebrow');
